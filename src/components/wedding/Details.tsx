@@ -20,11 +20,8 @@ export function Details() {
         <div className="relative rounded-t-[9rem] border border-gold/50 bg-parchment px-7 pt-16 pb-10 text-center shadow-[0_30px_60px_-45px_var(--color-ink)] paper-grain">
           <div className="pointer-events-none absolute inset-x-3 top-3 bottom-3 rounded-t-[8.4rem] border border-gold/30" />
 
-          <p className="text-xs tracking-[0.32em] text-ink/75 uppercase">
-            {invitation.invite.kicker}
-          </p>
-          <p className="mt-2 text-[0.62rem] tracking-[0.4em] text-gold uppercase">The Wedding</p>
-          <p className="mt-3 font-display text-4xl tracking-[0.12em] text-pine">
+          <p className="text-[0.62rem] tracking-[0.4em] text-gold uppercase">The Wedding</p>
+          <p className="mt-4 font-display text-4xl tracking-[0.12em] text-pine">
             {event.dateLabel}
           </p>
           <div className="mx-auto mt-5 w-28 gold-rule" />
