@@ -1,17 +1,19 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { X } from "lucide-react";
-const heroArch = "https://media.invitestory.in/sage-parchment/src/assets/hero-arch.jpg";
-const story1 = "https://media.invitestory.in/sage-parchment/src/assets/story-1.jpg";
-const story2 = "https://media.invitestory.in/sage-parchment/src/assets/story-2.jpg";
-const story3 = "https://media.invitestory.in/sage-parchment/src/assets/story-3.jpg";
+import photo1 from "@/assets/couple/rhea-shameek-1.jpg";
+import photo2 from "@/assets/couple/rhea-shameek-2.jpg";
+import photo3 from "@/assets/couple/rhea-shameek-3.jpg";
+import photo4 from "@/assets/couple/rhea-shameek-4.jpg";
+import photo5 from "@/assets/couple/rhea-shameek-5.jpg";
 import { Reveal } from "./Reveal";
 
 const PHOTOS = [
-  { src: story2, alt: "The couple in a lotus garden" },
-  { src: story1, alt: "The couple seated under a golden mandap" },
-  { src: story3, alt: "Mehendi and haldi celebrations" },
-  { src: heroArch, alt: "The couple beneath an ornate golden arch" },
+  { src: photo1, alt: "Rhea and Shameek together outdoors" },
+  { src: photo3, alt: "Rhea and Shameek celebration moments" },
+  { src: photo4, alt: "Rhea laughing joyfully with Shameek" },
+  { src: photo2, alt: "Rhea and Shameek walking together" },
+  { src: photo5, alt: "Rhea and Shameek holding hands" },
 ];
 
 export function Gallery() {
