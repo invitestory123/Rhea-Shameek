@@ -1,5 +1,5 @@
 import { Navigation } from "lucide-react";
-const mapPreview = "https://media.invitestory.in/sage-parchment/src/assets/map-preview.jpg";
+import venueSketch from "@/assets/venue-sketch.jpg";
 import { invitation } from "@/config/invitation";
 import { directionsUrl, mapsUrl } from "@/lib/wedding";
 import { Reveal } from "./Reveal";
@@ -21,8 +21,8 @@ export function Venue() {
         >
           <div className="relative">
             <img
-              src={mapPreview}
-              alt={`Illustrated map showing the location of ${venue.name}`}
+              src={venueSketch}
+              alt={`Architectural sketch illustration of ${venue.name}`}
               loading="lazy"
               width={1200}
               height={800}

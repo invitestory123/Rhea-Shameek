@@ -36,19 +36,25 @@ export function Hero() {
       {/* Fixed bottom gradient to guarantee seamless transition to next section */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-72 bg-gradient-to-t from-parchment via-parchment/95 via-60% to-transparent" />
 
+      {/* Top kicker inside the upper arch */}
       <motion.div
         style={{ y: textY }}
-        className="relative z-20 mt-auto w-full px-6 pt-24 pb-8 text-center"
+        className="relative z-20 w-full px-6 pt-20 sm:pt-24 md:pt-28 text-center"
       >
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: -10 }}
           animate={opened ? { opacity: 1, y: 0 } : false}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-xs sm:text-sm font-medium tracking-[0.32em] text-pine uppercase"
+          className="text-sm sm:text-base font-bold tracking-[0.22em] text-pine uppercase"
         >
           {invite.kicker}
         </motion.p>
+      </motion.div>
 
+      <motion.div
+        style={{ y: textY }}
+        className="relative z-20 mt-auto w-full px-6 pt-4 pb-8 text-center"
+      >
         <motion.h1
           initial={{ opacity: 0, y: 24, letterSpacing: "0.4em" }}
           animate={opened ? { opacity: 1, y: 0, letterSpacing: "0.16em" } : false}

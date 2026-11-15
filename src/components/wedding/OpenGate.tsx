@@ -81,16 +81,7 @@ function Opener({ opened, onOpen }: { opened: boolean; onOpen: () => void }) {
         transition={{ duration: 0.9, ease: "easeOut" }}
         className="absolute inset-0 flex flex-col items-center justify-center px-8 text-center"
       >
-        <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="text-xs sm:text-sm font-medium tracking-[0.35em] text-gold-soft uppercase"
-        >
-          {invite.kicker}
-        </motion.p>
-
-        <div className="relative mt-8 flex h-40 w-40 items-center justify-center">
+        <div className="relative flex h-40 w-40 items-center justify-center">
           <motion.span
             animate={{ rotate: 360 }}
             transition={{ duration: 46, repeat: Infinity, ease: "linear" }}

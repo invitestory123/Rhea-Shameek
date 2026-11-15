@@ -53,10 +53,6 @@ export function Countdown() {
             </div>
           ))}
         </div>
-
-        <p className="mt-6 font-display text-lg italic text-ink/70">
-          {invitation.event.dayLabel}, {invitation.event.timeLabel}
-        </p>
       </Reveal>
     </section>
   );

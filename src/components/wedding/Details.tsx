@@ -1,4 +1,4 @@
-import { CalendarPlus, Clock, MapPin, Shirt } from "lucide-react";
+import { CalendarPlus, MapPin } from "lucide-react";
 import jaali from "@/assets/jaali.jpg";
 import { invitation } from "@/config/invitation";
 import { directionsUrl, googleCalendarUrl } from "@/lib/wedding";
@@ -31,20 +31,12 @@ export function Details() {
 
           <ul className="mt-7 space-y-4 text-sm text-ink/80">
             <li className="flex items-center justify-center gap-2">
-              <Clock className="size-4 text-gold" aria-hidden />
-              {event.dayLabel}, {event.timeLabel}
-            </li>
-            <li className="flex items-center justify-center gap-2">
-              <MapPin className="size-4 text-gold" aria-hidden />
+              <MapPin className="size-4 text-gold shrink-0" aria-hidden />
               <span>
                 {venue.name}
                 <br />
                 <span className="text-ink/60">{venue.address}</span>
               </span>
-            </li>
-            <li className="flex items-center justify-center gap-2">
-              <Shirt className="size-4 text-gold" aria-hidden />
-              {event.dressCode}
             </li>
           </ul>
 
