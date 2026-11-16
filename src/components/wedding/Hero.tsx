@@ -88,9 +88,11 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={opened ? { opacity: 1 } : false}
           transition={{ duration: 1, delay: 1.15 }}
-          className="mt-3 font-display text-lg sm:text-2xl tracking-[0.12em] text-gold px-2"
+          className="mt-3 font-display text-xl sm:text-2xl tracking-[0.14em] text-gold px-2 leading-snug"
         >
-          {event.dateLabel}
+          <span>30th Jan</span>
+          <br />
+          <span>11th &amp; 12th February 2027</span>
         </motion.p>
 
         <motion.p

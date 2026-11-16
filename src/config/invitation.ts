@@ -21,6 +21,8 @@ export const invitation = {
     startsAt: "2027-02-12T10:00:00+05:30",
     endsAt: "2027-02-12T23:00:00+05:30",
     dateLabel: "30th Jan, 11th & 12th February 2027",
+    dateLine1: "30th Jan",
+    dateLine2: "11th & 12th February 2027",
     dayLabel: "",
     timeLabel: "",
     dressCode: "Traditional / Festive Indian Attire",
@@ -47,7 +49,7 @@ export const invitation = {
     },
     {
       date: "12th Feb 2027",
-      title: "Grahshanti & Mandap Muhurat, Haldi, Wedding",
+      title: "Choora, Haldi, Wedding",
       location: "Mayfair Lake Resort, Raipur",
     },
   ],

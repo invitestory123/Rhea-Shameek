@@ -123,9 +123,11 @@ function Opener({ opened, onOpen }: { opened: boolean; onOpen: () => void }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.9 }}
-          className="mt-4 px-4 text-center font-display text-sm tracking-[0.14em] text-gold sm:text-base"
+          className="mt-4 max-w-xs px-2 text-center font-display text-base tracking-[0.16em] text-gold sm:text-lg leading-relaxed"
         >
-          {event.dateLabel}
+          <span>30th Jan</span>
+          <br />
+          <span>11th &amp; 12th February 2027</span>
         </motion.p>
 
         <motion.button
