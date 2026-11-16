@@ -12,8 +12,6 @@ export function Blessing() {
         <p className="mt-5 font-display text-lg leading-relaxed italic text-ink/75">
           “{blessing.translation}”
         </p>
-        <p className="mt-4 text-[0.6rem] tracking-[0.3em] text-gold uppercase">{blessing.source}</p>
-        <div className="mx-auto mt-8 w-20 gold-rule" />
       </Reveal>
     </section>
   );

@@ -5,7 +5,7 @@ import { directionsUrl, googleCalendarUrl } from "@/lib/wedding";
 import { Reveal } from "./Reveal";
 
 export function Details() {
-  const { event, venue } = invitation;
+  const { event, itinerary } = invitation;
 
   return (
     <section className="relative overflow-hidden px-5 py-20">
@@ -17,27 +17,31 @@ export function Details() {
       <div aria-hidden className="absolute inset-0 bg-parchment/70" />
 
       <Reveal className="relative mx-auto max-w-md">
-        <div className="relative rounded-t-[9rem] border border-gold/50 bg-parchment px-7 pt-16 pb-10 text-center shadow-[0_30px_60px_-45px_var(--color-ink)] paper-grain">
+        <div className="relative rounded-t-[9rem] border border-gold/50 bg-parchment px-6 pt-16 pb-10 text-center shadow-[0_30px_60px_-45px_var(--color-ink)] paper-grain">
           <div className="pointer-events-none absolute inset-x-3 top-3 bottom-3 rounded-t-[8.4rem] border border-gold/30" />
 
-          <p className="text-[0.62rem] tracking-[0.4em] text-gold uppercase">The Wedding</p>
-          <p className="mt-4 font-display text-4xl tracking-[0.12em] text-pine">
-            {event.dateLabel}
-          </p>
-          <div className="mx-auto mt-5 w-28 gold-rule" />
+          <p className="text-[0.68rem] tracking-[0.42em] text-gold uppercase">Itinerary</p>
+          <div className="mx-auto mt-4 w-24 gold-rule" />
 
-          <ul className="mt-7 space-y-4 text-sm text-ink/80">
-            <li className="flex items-center justify-center gap-2">
-              <MapPin className="size-4 text-gold shrink-0" aria-hidden />
-              <span>
-                {venue.name}
-                <br />
-                <span className="text-ink/60">{venue.address}</span>
-              </span>
-            </li>
-          </ul>
+          <div className="mt-8 space-y-6">
+            {itinerary.map((item, idx) => (
+              <div key={item.date} className="relative">
+                {idx > 0 && <div className="mx-auto mb-6 w-16 border-t border-gold/30" />}
+                <p className="font-display text-2xl tracking-[0.06em] text-pine">{item.date}</p>
+                <p className="mt-1.5 text-sm font-medium tracking-[0.04em] text-ink/90">
+                  {item.title}
+                </p>
+                {item.location && (
+                  <p className="mt-1 flex items-center justify-center gap-1.5 text-xs text-ink/65">
+                    <MapPin className="size-3 text-gold shrink-0" aria-hidden />
+                    {item.location}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
 
-          <p className="mt-6 font-display text-lg italic text-ink/65">{event.note}</p>
+          <p className="mt-8 font-display text-lg italic text-ink/65">{event.note}</p>
 
           <div className="mt-8 flex flex-col gap-3">
             <a

@@ -20,9 +20,9 @@ export const invitation = {
     /** ISO with timezone offset — India Standard Time */
     startsAt: "2027-02-12T10:00:00+05:30",
     endsAt: "2027-02-12T23:00:00+05:30",
-    dateLabel: "12 . 02 . 2027",
-    dayLabel: "Friday",
-    timeLabel: "10:00 in the morning",
+    dateLabel: "30th Jan, 11th & 12th February 2027",
+    dayLabel: "",
+    timeLabel: "",
     dressCode: "Traditional / Festive Indian Attire",
     note: "Celebrations to follow",
   },
@@ -34,12 +34,29 @@ export const invitation = {
     lat: 21.162,
     lng: 81.787,
   },
+  itinerary: [
+    {
+      date: "30th Jan 2027",
+      title: "Engagement",
+      location: "Bhatinda",
+    },
+    {
+      date: "11th Feb 2027",
+      title: "Mehendi, Sangeet",
+      location: "Mayfair Lake Resort, Raipur",
+    },
+    {
+      date: "12th Feb 2027",
+      title: "Grahshanti & Mandap Muhurat, Haldi, Wedding",
+      location: "Mayfair Lake Resort, Raipur",
+    },
+  ],
   story: [],
   blessing: {
     line: "May your intentions be one, may your hearts beat as one.",
     translation:
       "Two families, one thread of gold — and a lifetime of happiness made luminous together.",
-    source: "A blessing from both families",
+    source: "",
   },
   footer: {
     families: "With love & warm wishes from the Badyal & Dave Families",

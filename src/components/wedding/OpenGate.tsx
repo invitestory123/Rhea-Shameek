@@ -123,7 +123,7 @@ function Opener({ opened, onOpen }: { opened: boolean; onOpen: () => void }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.9 }}
-          className="mt-3 font-display text-base tracking-[0.3em] text-gold"
+          className="mt-4 px-4 text-center font-display text-sm tracking-[0.14em] text-gold sm:text-base"
         >
           {event.dateLabel}
         </motion.p>
