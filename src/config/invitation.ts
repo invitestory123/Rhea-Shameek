@@ -61,7 +61,7 @@ export const invitation = {
     source: "",
   },
   footer: {
-    families: "With love & warm wishes from the Badyal & Dave Families",
+    families: "With love & warm wishes from the Dave & Badyal Family",
     contacts: [],
   },
   meta: {
